@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -moz-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+  background: -ms-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+  background: -webkit-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+  color: #fff;
+  font-weight: bolder;
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    outline: none;
+
+    &:focus {
+      background: #fff;
+      color: #001628;
+    }
+  }
+
+  img {
+    height: 40px;
+
+    &:nth-of-type(2) {
+      height: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}

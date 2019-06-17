@@ -1,0 +1,81 @@
+.main {
+  margin: 10px;
+  font-family: "Lora";
+
+  .container {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+
+    .info-1,
+    .info-2 {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0 5px;
+        &:not(&:first-of-type) {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .info-1 {
+      margin-bottom: 20px;
+    }
+
+    > img {
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .medal-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    .medal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 10px;
+      background: linear-gradient(to top, #ddd 0%, #fff 100%);
+      border-radius: 5px;
+
+      p {
+        padding: 20px;
+        background: #555;
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+      }
+
+      .amount {
+        position: absolute;
+        color: white;
+        font-weight: 800;
+        margin-left: 170px;
+        margin-top: 180px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: rgb(74, 86, 99);
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      img {
+        height: 315px; // did it beacause the medal images have different sizes from the psd
+        padding: 40px;
+      }
+    }
+  }
+}

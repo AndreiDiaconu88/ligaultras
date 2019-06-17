@@ -1,0 +1,32 @@
+.header {
+  background: #001628;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-ultras {
+  width: 160px;
+}
+
+.rank {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+  padding: 10px;
+  background: -moz-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+  background: -ms-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+  background: -webkit-linear-gradient( -90deg, rgb(65,71,76) 0%, rgb(42,44,52) 99%);
+
+  img {
+    &:first-of-type {
+      width: 30px;
+    }
+  }
+
+  p {
+    margin: 0 20px 0 5px;
+  }
+}

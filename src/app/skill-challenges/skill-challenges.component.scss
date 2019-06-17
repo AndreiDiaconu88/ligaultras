@@ -1,0 +1,147 @@
+.main {
+  margin: 20px;
+  border-radius: 5px;
+  background: #16528e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p:nth-of-type(2) {
+    margin: 0 auto 10px;
+  }
+}
+
+// .chains {
+//   display: block;
+//   width: 100%;
+//   background-image: url('../../assets/chain-bg.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+.header {
+  display: flex;
+  background: -moz-linear-gradient(
+    to top,
+    rgb(3, 7, 13) 0%,
+    rgb(21, 62, 104) 52%,
+    rgb(26, 106, 186) 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    rgb(3, 7, 13) 0%,
+    rgb(21, 62, 104) 52%,
+    rgb(26, 106, 186) 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgb(3, 7, 13) 0%,
+    rgb(21, 62, 104) 52%,
+    rgb(26, 106, 186) 100%
+  );
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+
+  + p {
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}
+
+.collect {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 15px;
+  margin: 40px auto;
+  background-color: rgb(15, 58, 102);
+  border-radius: 10px;
+
+  a {
+    background: -moz-linear-gradient(
+      90deg,
+      rgb(79, 154, 11) 0%,
+      rgb(92, 177, 6) 37%,
+      rgb(104, 200, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgb(79, 154, 11) 0%,
+      rgb(92, 177, 6) 37%,
+      rgb(104, 200, 0) 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      rgb(79, 154, 11) 0%,
+      rgb(92, 177, 6) 37%,
+      rgb(104, 200, 0) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgb(79, 154, 11) 0%,
+      rgb(92, 177, 6) 37%,
+      rgb(104, 200, 0) 100%
+    );
+    border-radius: 5px;
+    padding: 10px 40px;
+  }
+
+  img {
+    width: 75px;
+  }
+}
+
+.table-ch {
+  margin: 10px;
+}
+
+.challenger {
+  margin: 2px 10px;
+  display: flex;
+  background: #0f3a66;
+  min-height: 115px;
+  .gap {
+    flex-grow: 11;
+  }
+  .section1,
+  .section2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .section1 {
+    img {
+      margin: 0 30px;
+      width: 50px;
+    }
+
+    .user-info {
+      flex-grow: 2;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .section2 {
+    div:not(.skill) {
+      width: 150px;
+    }
+    .skill {
+      min-width: 100px;
+      background: #0f2943;
+      border-radius: 15px;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

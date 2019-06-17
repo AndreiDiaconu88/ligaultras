@@ -1,0 +1,95 @@
+<div class="main">
+  <!-- <div class="chains"></div> -->
+  <div class="header">
+    <img src="../../assets/training.png">
+    <p>Skill Challenge</p>
+  </div>
+  <p>Challenge Ended</p>
+  <div class="collect">
+    <img src="../../assets/gift-gold.png">
+    <a (click)="collectPopup()">COLLECT</a>
+  </div>
+  <p *ngIf="modalOpened">Congrats! You got your gift.</p>
+  <div class="tabel-ch">
+    <div class="challenger">
+      <div class="section1">
+        <div class="user-info">
+          <p>{{challengers.challengeGroup[0].userId}}</p>
+          <img src="../../assets/profile.png">
+        </div>
+        <p>{{challengers.challengeGroup[0].userName}}</p>
+      </div>
+      <div class="gap"></div>
+      <div class="section2">
+        <div class="skill">
+          <img src="../../assets/training.png">
+          <p>{{challengers.challengeGroup[0].skill}}</p>
+        </div>
+        <div>
+          <img src="../../assets/gift-gold.png">
+        </div>
+      </div>
+    </div>
+    <div class="challenger">
+      <div class="section1">
+        <div class="user-info">
+          <p>{{challengers.challengeGroup[1].userId}}</p>
+          <img src="../../assets/profile.png">
+        </div>
+        <p>{{challengers.challengeGroup[1].userName}}</p>
+      </div>
+      <div class="gap"></div>
+      <div class="section2">
+        <div class="skill">
+          <img src="../../assets/training.png">
+          <p>{{challengers.challengeGroup[1].skill}}</p>
+        </div>
+        <div>
+          <img src="../../assets/gift-silver.png">
+        </div>
+      </div>
+    </div>
+    <div class="challenger">
+      <div class="section1">
+        <div class="user-info">
+          <p>{{challengers.challengeGroup[2].userId}}</p>
+          <img src="../../assets/profile.png">
+        </div>
+        <p>{{challengers.challengeGroup[2].userName}}</p>
+      </div>
+      <div class="gap"></div>
+      <div class="section2">
+        <div class="skill">
+          <img src="../../assets/training.png">
+          <p>{{challengers.challengeGroup[2].skill}}</p>
+        </div>
+        <div>
+          <img src="../../assets/gift-bronze.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Simpler and more efficient way of listing the challengers using a single template
+    It can't be used because the type of gift is not specified in json. -->
+    <!-- <div class="tabel-ch" *ngFor='let challenger of challengers; let i=index'> -->
+    <!-- <div class="challenger">
+      <div class="section1">
+        <div class="user-info">
+          <p>{{challenger.userId}}</p>
+          <img src="../../assets/profile.png">
+        </div>
+        <p>{{challenger.userName}}</p>
+      </div>
+      <div class="gap"></div>
+      <div class="section2">
+        <div class="skill">
+          <img src="../../assets/training.png">
+          <p>{{challenger.skill}}</p>
+        </div>
+        <div>
+          <img src="../../assets/{{challenger.prize}}">
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
