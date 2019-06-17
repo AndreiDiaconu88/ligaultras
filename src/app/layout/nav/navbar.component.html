@@ -1,8 +1,8 @@
 <div class="navbar">
   <div tabindex="0" [routerLink]="['/skill-challenge']"><img src='../../../assets/training.png'
-      (click)="togglePlayer()">SKILL CHALLENGE
-    <img *ngIf="skillClicked===false" src="../../../assets/alert.png"></div>
+      (click)="toggleSkill()">SKILL CHALLENGE
+    <img *ngIf="playerClicked" src="../../../assets/alert.png"></div>
   <div tabindex="0" [routerLink]="['/profile']"><img src="../../../assets/nav-profile.png"
-      (click)="toggleSkill()">PROFILE
+      (click)="togglePlayer()">PROFILE
     <img *ngIf="playerClicked===false" src="../../../assets/alert.png"></div>
 </div>
